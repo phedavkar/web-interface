@@ -8,6 +8,6 @@
     "stylus": "*",
     "nib": "*"
 	"mongodb": "*",
-    "monk": "*"
+   
   }
 }
