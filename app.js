@@ -3,8 +3,9 @@ var express  = require ('express'),
 stylus = require ('stylus'), 
 nib = require ('nib')
 var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk('localhost:27017/webinterface');
+
+var http = require('http');
+var path = require('path');
 
 
 var app = express()
@@ -29,4 +30,5 @@ app.get('/', function (req, res) {
   }
   )
 })
+
 app.listen(3000)
